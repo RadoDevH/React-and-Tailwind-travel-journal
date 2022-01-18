@@ -10,7 +10,7 @@ const Card = ({
   description,
 }) => {
   return (
-    <div className="flex  mb-5 h-[200px] ">
+    <div className="flex  mb-5 min-h-[200px] ">
       <div className=" w-1/3  mr-2">
         <img
           className="rounded-lg object-cover h-full  w-full"
@@ -43,10 +43,12 @@ const Card = ({
             </a>
           </div>
           <h2 className="mb-3 font-bold text-2xl">{title}</h2>
+        </div>
+        <div>
           <p className="font-semibold mt-10">
             <span>{startDate}</span> - <span>{endDate}</span>
-            <p className="text-sm font-light">{description}</p>
           </p>
+          <p className="text-sm font-light">{description}</p>
         </div>
       </div>
     </div>
